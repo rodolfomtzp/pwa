@@ -1,0 +1,207 @@
+/*---------Estilos generales--------------------*/
+/****RESET****/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Open Sans', Verdana;
+}
+
+body{
+    background-color: #fff;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+.container{
+    width: 85%;
+    margin: 0px auto;
+}
+
+/*--------Main Header ------------------------*/
+#main-header{
+    height: 100px;
+    line-height: 85px;
+}
+
+#logo{
+    width: 60%;
+    float: left;
+}
+
+#logo h1{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #fa8296;
+}
+
+nav{
+    width: 380px;
+    float: left;
+}
+
+nav ul li{
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: #000;
+}
+
+nav ul li a:hover{
+    color: #fa8296;
+}
+
+/*--------------Banner----------------*/
+#banner{
+    height: 300px;
+    background-color: #fa8296;
+}
+
+#banner h2{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 6px #000;
+    line-height: 280px;
+}
+
+/*------------------Servicios ------------*/
+.subheader{
+    font-size: 34px;
+    color: #222;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fa8296;
+}
+
+.service, .video{
+    width: 33%;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service img{
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.service h3{
+    margin-bottom: 10px;
+}
+
+.service p, .video p{
+    color: #444;
+    text-align: justify;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.video iframe{
+    width: 85%;
+    height: 170px;
+}
+
+/*----------------footer-------------*/
+#main-footer{
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 30px;    
+}
+
+#main-footer .subheader{
+    color: #fff;
+}
+
+#networks{
+    width: 220px;
+    list-style: none;
+    margin: 0px auto;
+    margin-top: 20px;
+    display: block;
+}
+
+#networks li{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 300ms;
+}
+
+#networks li:hover{
+    opacity: 0.1;
+    transform: scale(1.2, 1.2);
+}
+
+/*------------------media queries --------------*/
+@media (max-width: 1225px){
+
+    .container{
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 999px){
+
+    #logo{
+        width: 250px;
+        float: none;
+        margin: 0px auto;
+    }
+
+    nav{
+        float: none;
+        margin: 0px auto;
+    }
+
+    #banner{
+        height: 150px;
+        overflow: hidden;
+    }
+
+    #banner h2{
+        line-height: 0px;
+        margin-top: 70px;
+        font-size: 30px;
+    }
+
+
+}
+
+@media (max-width: 380px){
+    #main-header{
+        height: auto;
+    }
+
+    nav ul li{
+        float: none;
+    }
+
+    #banner h2{
+        font-size: 20px;
+    }
+
+    .service, .video{
+        width: 90%;
+        text-align: center;
+        float: none;
+    }
+
+    .service p, .video p{
+        text-align: center;
+    }
+}
